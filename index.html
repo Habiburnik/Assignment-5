@@ -13,38 +13,45 @@
 </head>
 
 <body>
-    <header class="h-20 gap-5 px-5 lg:px-32 bg-[#F9F7F3] flex justify-between">
-        <button class="m-4  btn bg-[#B4F461] text-black border-none hover:bg-[#B4F461] hover: ">Blog
-        </button>
-        <div class="flex my-auto">
-            <img class="mt-3 lg:mt-0 h-9 w-9" src="assets/logo.png" alt="">
-            <p class="p-2 font-bold">Donate Bangladesh</p>
-        </div>
-        <div class="flex my-auto">
-            <img class="h-7 w-7 mt-3 lg:mt-0 mr-2" src="assets/coin.png" alt="">
-            <p class="text-lg font-semibold">5500 BDT</p>
-        </div>
-
-    </header>
+    <section>
+        <header class="h-20 gap-5 px-5 lg:px-32 bg-[#F9F7F3] ">
+            <div class="flex justify-between ">
+                <button id="blog-home" class="m-4  btn bg-[#B4F461] text-black border-none hover:bg-[#B4F461] hover: ">Blog
+                </button>
+                <div class="flex my-auto">
+                    <img class="mt-3 lg:mt-0 h-9 w-9" src="assets/logo.png" alt="">
+                    <p class="p-2 font-bold">Donate Bangladesh</p>
+                </div>
+                <div class="flex my-auto">
+                    <img class="h-7 w-7 mt-3 lg:mt-0 mr-2" src="assets/coin.png" alt="">
+                    <p class="text-lg font-semibold"><span id="user-balance">5500</span> BDT</p>
+                </div>
+            </div>
+        </header>
+    
+            <div class="flex justify-center gap-3 px-5 lg:px-32 mt-10 h-10">
+                <button class="btn border-none  text-black bg-[#B4F461] hover:bg-[#B4F461]">Donate
+                </button>
+                <button class="btn border-none text-black bg-[#1111111a] hover:bg-[#B4F461]">History
+                </button>
+            </div>
+    
+        
+    </section>
+   
     <main>
-        <div class="flex justify-center gap-3 px-5 lg:px-32 mt-10">
-            <button
-                class="btn btn-outline bg-[#FFFFFF] text-slate-500 border-[#1111111a] hover:bg-[#B4F461] hover:border-[#B4F461]">Donate
-            </button>
-            <button
-                class="btn btn-outline bg-[#FFFFFF] text-slate-500 border-[#1111111a] hover:bg-[#B4F461] hover:border-[#B4F461]">History
-            </button>
-        </div>
-
         <div class="lg:flex mx-5 lg:mx-32 border-[#1111111a] border-2 rounded-xl mt-10">
             <div class="lg:w-1/2 lg:h-96  ">
                 <img class="p-6 w-full h-full" src="assets/noakhali.png" alt="">
             </div>
             <div class="lg:w-3/4 pl-5 lg:pl-0 py-8 pr-8">
                 <div class="">
-                    <div class="flex bg-[#1111111a] w-28 h-8 pl-6 pt-1 rounded-lg mb-5">
+                    <div class="inline-flex bg-[#1111111a] h-8 px-5 pt-1 rounded-lg mb-5">
                         <img class="h-5 w-5 mt-0.5" src="assets/coin.png" alt="">
-                        <p class="pl-2">0 BDT</p>
+
+                        <span id="feni-amount" class="px-1">0</span>
+                        <p>BDT</p>
+
                     </div>
                     <h4 class="font-bold text-lg mb-5">Donate for Flood at Noakhali, Bangladesh</h4>
                     <p class="text-[#111111B3]  mb-5"> The recent floods in Noakhali have caused significant damage to
@@ -56,22 +63,26 @@
                         positive
                         impact on the lives of those in need.</p>
                 </div>
-                <input class="bg-white border-[#1111111a] border-2 rounded-xl h-10 mr-8 mb-5 w-full  pl-5" type="text" name=""
-                    id="" placeholder="Write Donation Amount">
+                <input class="bg-white border-[#1111111a] border-2 rounded-xl h-10 mr-8 mb-5 w-full  pl-5" type="text"
+                    name="" id="donate-tk-feni" placeholder="Write Donation Amount">
                 <br>
-                <button class=" mb-8  btn bg-[#B4F461] text-black border-none hover:bg-[#B4F461] hover: ">Donate Now
+                <button id="donate-feni"
+                    class="donate-now mb-8  btn bg-[#B4F461] text-black border-none hover:bg-[#B4F461] hover: ">Donate
+                    Now
                 </button>
             </div>
         </div>
+
         <div class="lg:flex mx-5 lg:mx-32 border-[#1111111a] border-2 rounded-xl mt-10">
             <div class="lg:w-1/2 lg:h-96  ">
                 <img class="p-6 w-full h-full" src="assets/feni.png" alt="">
             </div>
             <div class="lg:w-3/4 pl-5 lg:pl-0 py-8 pr-8">
                 <div class="">
-                    <div class="flex bg-[#1111111a] w-28 h-8 pl-6 pt-1 rounded-lg mb-5">
+                    <div class="inline-flex bg-[#1111111a] h-8 px-6 pt-1 rounded-lg mb-5">
                         <img class="h-5 w-5 mt-0.5" src="assets/coin.png" alt="">
-                        <p class="pl-2">0 BDT</p>
+                        <p class="px-1">600</p>
+                        <p>BDT</p>
                     </div>
                     <h4 class="font-bold text-lg mb-5">Donate for Flood Relief in Feni,Bangladesh</h4>
                     <p class="text-[#111111B3]  mb-5"> The recent floods in Noakhali have caused significant damage to
@@ -83,22 +94,23 @@
                         positive
                         impact on the lives of those in need.</p>
                 </div>
-                <input class="bg-white border-[#1111111a] border-2 rounded-xl h-10 mr-8 mb-5 w-full pl-5" type="text" name=""
-                    id="" placeholder="Write Donation Amount">
+                <input class="bg-white border-[#1111111a] border-2 rounded-xl h-10 mr-8 mb-5 w-full pl-5" type="text"
+                    name="" id="" placeholder="Write Donation Amount">
                 <br>
                 <button class=" mb-8  btn bg-[#B4F461] text-black border-none hover:bg-[#B4F461] hover: ">Donate Now
                 </button>
             </div>
         </div>
+
         <div class="lg:flex mx-5 lg:mx-32 border-[#1111111a] border-2 rounded-xl mt-10">
             <div class="lg:w-1/2 lg:h-96  ">
                 <img class="p-6 w-full h-full" src="assets/quota-protest.png" alt="">
             </div>
             <div class="lg:w-3/4 pl-5 lg:pl-0 py-8 pr-8">
                 <div class="">
-                    <div class="flex bg-[#1111111a] w-28 h-8 pl-6 pt-1 rounded-lg mb-5">
+                    <div class="inline-flex bg-[#1111111a] h-8 px-6 pt-1 rounded-lg mb-5">
                         <img class="h-5 w-5 mt-0.5" src="assets/coin.png" alt="">
-                        <p class="pl-2">0 BDT</p>
+                        <p class="pl-2">2400 BDT</p>
                     </div>
                     <h4 class="font-bold text-lg mb-5">Aid for Injured in the Quota Movement</h4>
                     <p class="text-[#111111B3]  mb-5"> The recent floods in Noakhali have caused significant damage to
@@ -110,15 +122,17 @@
                         positive
                         impact on the lives of those in need.</p>
                 </div>
-                <input class="bg-white border-[#1111111a] border-2 rounded-xl h-10 mr-8 mb-5 w-full pl-5" type="text" name=""
-                    id="" placeholder="Write Donation Amount">
+                <input class="bg-white border-[#1111111a] border-2 rounded-xl h-10 mr-8 mb-5 w-full pl-5" type="text"
+                    name="" id="" placeholder="Write Donation Amount">
                 <br>
                 <button class=" mb-8  btn bg-[#B4F461] text-black border-none hover:bg-[#B4F461] hover: ">Donate Now
                 </button>
             </div>
         </div>
-        
-        
+        <section>
+
+        </section>
+        <script src="JS/index.js"></script>
     </main>
 </body>
 
