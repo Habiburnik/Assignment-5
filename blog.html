@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="background-color: white; color: black;>
+<html lang="en" style="background-color: white; color: black;">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,10 @@
     <!-- daisyui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -26,34 +30,60 @@
 
     </header>
     <main>
-        <div class="collapse collapse-arrow bg-white">
-            <input type="radio" name="my-accordion-2" checked="checked" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-            <div class="collapse-content">
-                <p>hello</p>
+        <section class="mx-[8%]">
+            <h3 class="text-3xl font-bold my-7">Important FAQ <i class="fa-regular fa-circle-question"></i></h3>
+
+            <div class="collapse collapse-arrow bg-white border-[#1111111a] border-2 mt-2">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is the DOM in JavaScript?</div>
+                <div class="collapse-content">
+                    <p>The DOM (Document Object Model) is a programming interface provided by browsers that allows
+                        developers to interact with and manipulate HTML and XML documents. It represents the document as
+                        a tree structure, where each node is an object corresponding to a part of the document, such as
+                        an element, attribute, or text. JavaScript can be used to access and modify these nodes,
+                        enabling dynamic content updates and user interaction.</p>
+                </div>
             </div>
-        </div>
-        <div class="collapse collapse-arrow bg-white">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-            <div class="collapse-content">
-                <p>hello</p>
+            <div class="collapse collapse-arrow bg-white border-[#1111111a] border-2 mt-2">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How can I select an element in the DOM using JavaScript?
+                </div>
+                <div class="collapse-content">
+                    <p>You can select elements in the DOM using several methods provided by the JavaScript document
+                        object. The most commonly used methods are:
+
+                        * document.getElementById('id'): Selects an element by its ID.
+                        * document.getElementsByClassName('class'): Selects elements with a specific class name.
+                        * document.getElementsByTagName('tag'): Selects elements by their tag name.
+                        * document.querySelector('selector'): Selects the first element that matches the specified CSS
+                        selector.
+                        * document.querySelectorAll('selector'): Selects all elements that match the specified CSS
+                        selector.</p>
+                </div>
             </div>
-        </div>
-        <div class="collapse collapse-arrow bg-white">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-            <div class="collapse-content">
-                <p>hello</p>
+            <div class="collapse collapse-arrow bg-white border-[#1111111a] border-2 mt-2">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do I add a new element to the DOM?</div>
+                <div class="collapse-content">
+                    <p>To add a new element to the DOM, you can follow these steps:
+
+                        Create the new element using document.createElement('tagName').
+                        Optionally, set any attributes or content for the new element.
+                        Append the new element to an existing element in the DOM using methods like appendChild() or
+                        insertBefore().</p>
+                </div>
             </div>
-        </div>
-        <div class="collapse collapse-arrow bg-white">
-            <input type="radio" name="my-accordion-2" checked="checked" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-            <div class="collapse-content">
-                <p>hello</p>
+            <div class="collapse collapse-arrow bg-white border-[#1111111a] border-2 mt-2">
+                <input type="radio" name="my-accordion-2"/>
+                <div class="collapse-title text-xl font-medium">How can I handle events in the DOM using JavaScript?
+                </div>
+                <div class="collapse-content">
+                    <p>You can handle events in the DOM by adding event listeners to elements using the addEventListener
+                        method. This allows you to specify the type of event to listen for and the function that should
+                        be executed when the event occurs.</p>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
     <script src="JS/blog.js"></script>
 </body>
